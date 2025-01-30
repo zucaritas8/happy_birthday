@@ -4,14 +4,34 @@
 
 .contenedor{
   background: rgb(255, 219, 225);
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   text-align: center;
 }
 
-p{
+.quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.question {
+  height: 15%;
+  width: 30%;
+  background-color: #f9c4d2;
+  border: 2px solid;
+  border-color: #b18597;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  border-radius: 0.75em;
   font-size: xx-large;
-  padding: 15%;
+  padding: 3%;
+}
+
+.buttons {
+  margin-top: 3%;
 }
 
 button{
@@ -159,4 +179,87 @@ button {
 .close:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
+}
+
+.card {
+  width: 500px;
+  height: 254px;
+  border-radius: 30px;
+  background: rgb(251, 247, 247);
+  box-shadow: rgba(212, 68, 179, 0.25) 0px 30px 50px -12px inset, rgba(212, 68, 179, 0.25) 0px 30px 50px -12px inset;
+}
+
+.hb {
+  color: rgb(172, 172, 172);
+  font-size: 30px;
+  font-weight: 900;
+  text-align: center;
+  font-family: monospace;
+  padding-top: 13%;
+}
+
+.all {
+  position: relative;
+  width: 1100px;
+  flex-wrap: wrap;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+.all .cardd {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  background: #fff;
+  margin: 30px 10px;
+  margin-top: -7%;
+  padding: 20px 15px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.all .cardd:hover {
+  height: 465px;
+}
+
+.all .cardd .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  left: 20px;
+  z-index: 1;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.all .cardd .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+.all .cardd .content {
+  position: relative;
+  margin-top: -120px;
+  padding: 10px 15px;
+  padding-top: 20%;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.all .cardd:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
+.image {
+  height: 200px;
 }
